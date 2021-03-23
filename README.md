@@ -9,4 +9,8 @@
 > > `conda activate RL-allocation` <br />
 > > `pip install -r requirements.txt`<br />
 
+###### Installing miniconda in Linux (ArchLinux)
+Follow the next steps:
+> Download and install Miniconda following the next instructions: [Miniconda](https://conda.io/projects/conda/en/latest/user-guide/install/linux.html)
+
 ##### Note: if necessary the system will request you to update pip
