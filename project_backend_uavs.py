@@ -650,9 +650,18 @@ def get_random_locationshexagon_neighbors(N,K,R,min_dist,equal_number_for_BS = T
 
     while(generated_hexagons < K):
 
+        # Custom BSs location
+        TX_loc_uavs = np.loadtxt('uav_location.txt')
+        TX_loc_uavs = np.transpose(TX_loc_uavs)
+
         for j in range(6):
             tmp_xloc = TX_loc [0, i]+np.sqrt(3)*R*np.cos(j*np.pi/(3))
             tmp_yloc = TX_loc [1, i]+np.sqrt(3)*R*np.sin(j*np.pi/(3))
+
+            tmp_xloc = TX_loc_uavs[0,i]
+            tmp_yloc = TX_loc_uavs[1,i]
+
+
             tmp_xhex = tmp_xloc+x_hexagon
             tmp_yhex = tmp_yloc+y_hexagon
             was_before = False

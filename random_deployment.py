@@ -87,6 +87,7 @@ def main(args):
                                                                                                               T=T,
                                                                                                               train_episodes = train_episodes,
                                                                                                               mobility_params = mobility_params)        
+
                 cursor1 = int(ep*train_episodes['T_train'])
                 cursor2 = int((ep+1)*train_episodes['T_train'])
                 gains[0][:,:,cursor1:cursor2] = copy.copy(i_gains[0])
