@@ -654,8 +654,8 @@ def get_random_locationshexagon_neighbors(N,K,R,min_dist,equal_number_for_BS = T
     #    TX_yhex [:,generated_hexagons*1 + k] = y_hexagon + TX_loc_uavs[1,0]
 
         #ORIGINAL Code
-        TX_loc[0, generated_hexagons * 1 + k] =  0.0
-        TX_loc[1, generated_hexagons * 1 + k] =  0.0
+        TX_loc[0, generated_hexagons * 1 + k] = 0.0
+        TX_loc[1, generated_hexagons * 1 + k] = 0.0
         TX_xhex[:, generated_hexagons * 1 + k] = x_hexagon
         TX_yhex[:, generated_hexagons * 1 + k] = y_hexagon
     generated_hexagons += 1
