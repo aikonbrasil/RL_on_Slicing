@@ -640,19 +640,23 @@ def get_random_locationshexagon_neighbors(N,K,R,min_dist,equal_number_for_BS = T
 ############### DROP KLL KKTERS    
     generated_hexagons = 0
     i = 0
+
+
+    # Custom BSs location
+    TX_loc_uavs = np.loadtxt('uav_location.txt')
+    TX_loc_uavs = np.transpose(TX_loc_uavs)
+
     #if (N>0):
     for k in range(1):
-        TX_loc [0, generated_hexagons*1 + k] = 0.0
-        TX_loc [1, generated_hexagons*1 + k] = 0.0
-        TX_xhex [:,generated_hexagons*1 + k] = x_hexagon
-        TX_yhex [:,generated_hexagons*1 + k] = y_hexagon
+        TX_loc [0, generated_hexagons*1 + k] =  TX_loc_uavs[0,0] #0.0
+        TX_loc [1, generated_hexagons*1 + k] =  TX_loc_uavs[1,0] #0.0
+        TX_xhex [:,generated_hexagons*1 + k] = x_hexagon + TX_loc_uavs[0,0]
+        TX_yhex [:,generated_hexagons*1 + k] = y_hexagon + TX_loc_uavs[1,0]
     generated_hexagons += 1
 
     while(generated_hexagons < K):
 
-        # Custom BSs location
-        TX_loc_uavs = np.loadtxt('uav_location.txt')
-        TX_loc_uavs = np.transpose(TX_loc_uavs)
+
 
         for j in range(6):
             tmp_xloc = TX_loc [0, i]+np.sqrt(3)*R*np.cos(j*np.pi/(3))
