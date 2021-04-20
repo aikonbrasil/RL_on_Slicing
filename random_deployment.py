@@ -84,7 +84,7 @@ def main(args):
             tot_test_episodes = int(total_samples/train_episodes['T_train'])
             for ep in range(tot_test_episodes):
                 i_gains,TX_loc,i_RX_loc,TX_xhex, TX_yhex, TX_neighbors,i_mirrors = pb.get_gains_hexagon_neighbors_shadowinginc (N,K,R,min_dist,train_episodes['T_train'],shadowing_dev,dcor,
-                                                                                                              equal_number_for_BS=equal_number_for_BS,draw=True,
+                                                                                                              equal_number_for_BS=equal_number_for_BS,draw=False,
                                                                                                               T=T,
                                                                                                               train_episodes = train_episodes,
                                                                                                               mobility_params = mobility_params)        
