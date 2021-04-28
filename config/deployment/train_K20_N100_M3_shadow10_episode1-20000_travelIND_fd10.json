@@ -4,7 +4,7 @@
         "simulation_index_start": 0,
         "N": 100,
         "K": 20,
-        "M": 3,
+        "M": 6,
         "R_defined": 200,
         "min_dist": 20,
         "dcor": 10.0,
@@ -24,7 +24,7 @@
     },
     "mobility_params": {
         "v_c": 300000000.0,
-        "f_c": 2000000000.0,
+        "f_c": 20000000000.0,
         "v_max": 0.0,
         "a_max": 0.5,
         "alpha_angle_rad": 0.175,
