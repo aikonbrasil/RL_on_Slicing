@@ -1,10 +1,12 @@
 #!/bin/bash
 
 echo "Train Slicing - Random Deployment"
+echo "ENTRO A QUI"
 
 python ./random_deployment.py --json-file "train_K20_N100_M4_shadow10_episode4-5000_travelIND_fd10" --num-sim 0 &
 wait
 
+echo "ENTRO A QUI"
 echo "Train Slicing - Proposed Algorithm "
 python ./trainProposed.py --json-file "train_K20_N100_M4_shadow10_episode4-5000_travelIND_fd10" --num-sim 0 &
 wait
