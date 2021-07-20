@@ -31,7 +31,9 @@ python ./train_results_interference.py --json-file "train_K20_N100_M3_shadow10_e
 #python3 -i ./train_results.py --json-file "train_K1_N20_M2_shadow10_episode4-5000_travelIND_fd10"
 python ./train_results_individualslices.py --json-file "train_K20_N100_M3_shadow10_episode4-2500_travelIND_fd10"
 
-fig/temscript.sh 50m
+cd fig
+./temscript.sh 50m
+cd ..
 
 ###### HISTORY:
 # First results with "train_K20_N100_M3_shadow10_episode4-1000_travelIND_fd10"
@@ -69,7 +71,9 @@ python ./train_results_interference.py --json-file "train_K20_N100_M3_shadow10_e
 #python3 -i ./train_results.py --json-file "train_K1_N20_M2_shadow10_episode4-5000_travelIND_fd10"
 python ./train_results_individualslices.py --json-file "train_K20_N100_M3_shadow10_episode4-2500_travelIND_fd10"
 
-fig/temscript.sh 100m
+cd fig
+./temscript.sh 100m
+cd ..
 
 ###### HISTORY:
 # First results with "train_K20_N100_M3_shadow10_episode4-1000_travelIND_fd10"
@@ -106,7 +110,9 @@ python ./train_results_interference.py --json-file "train_K20_N100_M3_shadow10_e
 #python3 -i ./train_results.py --json-file "train_K1_N20_M2_shadow10_episode4-5000_travelIND_fd10"
 python ./train_results_individualslices.py --json-file "train_K20_N100_M3_shadow10_episode4-2500_travelIND_fd10"
 
-fig/temscript.sh 200m
+cd fig
+./temscript.sh 200m
+cd ..
 
 ###### HISTORY:
 # First results with "train_K20_N100_M3_shadow10_episode4-1000_travelIND_fd10"
@@ -143,4 +149,5 @@ python ./train_results_interference.py --json-file "train_K20_N100_M3_shadow10_e
 #python3 -i ./train_results.py --json-file "train_K1_N20_M2_shadow10_episode4-5000_travelIND_fd10"
 python ./train_results_individualslices.py --json-file "train_K20_N100_M3_shadow10_episode4-2500_travelIND_fd10"
 
-fig/temscript.sh 300m
+cd fig
+./temscript.sh 300m
