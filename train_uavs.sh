@@ -1,5 +1,6 @@
 #!/bin/bash
 
+cp uav_location_50m.txt uav_location.txt
 echo "Train Slicing - Random Deployment"
 
 python ./random_deployment.py --json-file "train_K20_N100_M3_shadow10_episode4-2500_travelIND_fd10_r50" --num-sim 0 &
@@ -31,7 +32,7 @@ python ./train_results_individualslices.py --json-file "train_K20_N100_M3_shadow
 # First results with "train_K20_N100_M3_shadow10_episode4-1000_travelIND_fd10"
 # Second results with "train_K20_N100_M3_shadow10_episode4-2500_travelIND_fd10"
 
-#!/bin/bash
+cp uav_location_100m.txt uav_location.txt
 
 echo "Train Slicing - Random Deployment"
 
@@ -63,7 +64,7 @@ python ./train_results_individualslices.py --json-file "train_K20_N100_M3_shadow
 # First results with "train_K20_N100_M3_shadow10_episode4-1000_travelIND_fd10"
 # Second results with "train_K20_N100_M3_shadow10_episode4-2500_travelIND_fd10"
 
-#!/bin/bash
+cp uav_location_200m.txt uav_location.txt
 
 echo "Train Slicing - Random Deployment"
 
@@ -95,7 +96,7 @@ python ./train_results_individualslices.py --json-file "train_K20_N100_M3_shadow
 # First results with "train_K20_N100_M3_shadow10_episode4-1000_travelIND_fd10"
 # Second results with "train_K20_N100_M3_shadow10_episode4-2500_travelIND_fd10"
 
-#!/bin/bash
+cp uav_location_300m.txt uav_location.txt
 
 echo "Train Slicing - Random Deployment"
 
