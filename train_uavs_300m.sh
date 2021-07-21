@@ -2,7 +2,7 @@
 
 ###### HISTORY:
 # First results with "train_K20_N100_M3_shadow10_episode4-1000_travelIND_fd10"
-# Second results with "train_K20_N100_M3_shadow10_episode4-2500_travelIND_fd10"
+# Second results with "train_K20_N100_M3_shadow10_episode4-2500_travelIND_fd10"h
 
 cp uav_location_300m.txt uav_location.txt
 echo "Copying the net deployment"
