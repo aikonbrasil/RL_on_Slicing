@@ -2,8 +2,8 @@
     "simulation": {
         "num_simulations": 1,
         "simulation_index_start": 0,
-        "N": 100,
-        "K": 20,
+        "N": 90,
+        "K": 18,
         "M": 4,
         "R_defined": 300,
         "min_dist": 35,
