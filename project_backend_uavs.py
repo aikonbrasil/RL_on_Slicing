@@ -568,13 +568,13 @@ def get_gains_hexagon_neighbors_shadowinginc (N,K,R,min_dist,total_samples,shado
     realR =  R * np.sqrt(3)/2;
 
     if (realR > 49) & (realR < 51):
-        g_dB2 = - (217.1 + 37.6* np.log10(0.001*distance_vector))
+        g_dB2 = - (153 + 37.6* np.log10(0.001*distance_vector))
     elif (realR > 99) & (realR < 101):
-        g_dB2 = - (191.1 + 37.6 * np.log10(0.001 * distance_vector))
+        g_dB2 = - (142 + 37.6 * np.log10(0.001 * distance_vector))
     elif (realR > 199) & (realR < 201):
-        g_dB2 = - (165.1 + 37.6 * np.log10(0.001 * distance_vector))
+        g_dB2 = - (131 + 37.6 * np.log10(0.001 * distance_vector))
     elif (realR > 299) & (realR < 301):
-        g_dB2 = - (150.1 + 37.6 * np.log10(0.001 * distance_vector))
+        g_dB2 = - (124 + 37.6 * np.log10(0.001 * distance_vector))
 
 
   #  g_dB2 = - (128.1 + 37.6* np.log10(0.001*distance_vector))
