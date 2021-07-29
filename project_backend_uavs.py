@@ -565,7 +565,27 @@ def get_gains_hexagon_neighbors_shadowinginc (N,K,R,min_dist,total_samples,shado
     gains = []
     # Get 2D distance pathloss, original pathloss tried in the previous versions
     # Get channel gains
-    g_dB2 = - (128.1 + 37.6* np.log10(0.001*distance_vector))
+    realR =  R * np.sqrt(3)/2;
+
+    if (realR > 49) & (realR < 51):
+        g_dB2 = - (217.1 + 37.6* np.log10(0.001*distance_vector))
+    elif (realR > 99) & (realR < 101):
+        g_dB2 = - (191.1 + 37.6 * np.log10(0.001 * distance_vector))
+    elif (realR > 199) & (realR < 201):
+        g_dB2 = - (165.1 + 37.6 * np.log10(0.001 * distance_vector))
+    elif (realR > 299) & (realR < 301):
+        g_dB2 = - (150.1 + 37.6 * np.log10(0.001 * distance_vector))
+
+
+  #  g_dB2 = - (128.1 + 37.6* np.log10(0.001*distance_vector))
+
+    #TODO: Add propagation Model not only for 2GHz
+    #References: https://www.etsi.org/deliver/etsi_tr/136900_136999/136931/09.00.00_60/tr_136931v090000p.pdf  (Pag. 10)
+    # that indicates the Frequency of operation of the current model, it is operating in 2GHz
+
+    #References: https://www.etsi.org/deliver/etsi_tr/136900_136999/136942/08.02.00_60/tr_136942v080200p.pdf  (Pag. 14)
+    # that indicates the generic model of "Macro cell propagation model – Urban Area ". In this reference is used as an
+    #  example the frequency of 900 MHz
     
     # init_shadowing
     tmp_g_dB = np.zeros((N,N,total_samples))
