@@ -27,6 +27,7 @@ def main(args):
     
     K = options['simulation']['K']
     N = options['simulation']['N']
+   # ap_deployment = options['simulation']['fullcoverage']
     # Multi channel scenario, M denotes number of channels.
     if'M' in options['simulation']:
         M = options['simulation']['M']
