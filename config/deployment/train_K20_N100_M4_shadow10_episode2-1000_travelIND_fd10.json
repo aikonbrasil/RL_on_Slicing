@@ -10,13 +10,13 @@
         "dcor": 10.0,
         "shadowing_dev": 10.0,
         "T": 0.02,
-        "total_samples": 20000,
+        "total_samples": 2000,
         "isTrain": false,
         "equal_number_for_BS": true,
         "pfs": false
     },
     "train_episodes": {
-        "T_train": 2500,
+        "T_train": 1000,
         "T_sleep": 0,
         "cell_passing_training": true,
         "cell_passing_sleeping": true,
