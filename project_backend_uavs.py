@@ -568,11 +568,27 @@ def get_gains_hexagon_neighbors_shadowinginc (N,K,R,min_dist,total_samples,shado
     realR =  R * np.sqrt(3)/2;
 
     if (realR > 49) & (realR < 51):
-        g_dB2 = - (153 + 37.6* np.log10(0.001*distance_vector))
+        g_dB2 = - (170 + 37.6* np.log10(0.001*distance_vector))
+    elif (realR > 74) & (realR < 76):
+        g_dB2 = - (166 + 37.6* np.log10(0.001*distance_vector))
     elif (realR > 99) & (realR < 101):
-        g_dB2 = - (142 + 37.6 * np.log10(0.001 * distance_vector))
+        g_dB2 = - (163 + 37.6 * np.log10(0.001 * distance_vector))
+    elif (realR > 119) & (realR < 121):
+        g_dB2 = - (160 + 37.6* np.log10(0.001*distance_vector))
+    elif (realR > 139) & (realR < 141):
+        g_dB2 = - (156 + 37.6* np.log10(0.001*distance_vector))
+    elif (realR > 159) & (realR < 161):
+        g_dB2 = - (152 + 37.6* np.log10(0.001*distance_vector))
     elif (realR > 199) & (realR < 201):
-        g_dB2 = - (131 + 37.6 * np.log10(0.001 * distance_vector))
+        g_dB2 = - (144 + 37.6 * np.log10(0.001 * distance_vector))
+    elif (realR > 219) & (realR < 221):
+        g_dB2 = - (140 + 37.6 * np.log10(0.001 * distance_vector))
+    elif (realR > 239) & (realR < 241):
+        g_dB2 = - (136 + 37.6 * np.log10(0.001 * distance_vector))
+    elif (realR > 259) & (realR < 261):
+        g_dB2 = - (132 + 37.6 * np.log10(0.001 * distance_vector))
+    elif (realR > 279) & (realR < 281):
+        g_dB2 = - (128 + 37.6 * np.log10(0.001 * distance_vector))
     elif (realR > 299) & (realR < 301):
         g_dB2 = - (124 + 37.6 * np.log10(0.001 * distance_vector))
 
