@@ -57,7 +57,7 @@ cd ..
 ###### 75m
 
 
-cp uav_location_50m.txt uav_location.txt
+cp uav_location_75m.txt uav_location.txt
 
 echo "Copying the net deployment"
 echo "75m"
@@ -310,7 +310,7 @@ cd ..
 
 ###### 220m
 
-cp uav_location_200m.txt uav_location.txt
+cp uav_location_220m.txt uav_location.txt
 
 echo "Copying the net deployment"
 echo "220m"
@@ -437,7 +437,7 @@ cd ..
 
 ###### 280m
 
-cp uav_location_140m.txt uav_location.txt
+cp uav_location_280m.txt uav_location.txt
 
 echo "Copying the net deployment"
 echo "280m"
