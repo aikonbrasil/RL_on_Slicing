@@ -4,7 +4,8 @@
 """
 
 import numpy as np
-import project_backend as pb
+import project_backend_uavs as pb
+#import project_backend as pb
 from scipy import special
 import json
 import copy
@@ -26,6 +27,7 @@ def main(args):
     
     K = options['simulation']['K']
     N = options['simulation']['N']
+   # ap_deployment = options['simulation']['fullcoverage']
     # Multi channel scenario, M denotes number of channels.
     if'M' in options['simulation']:
         M = options['simulation']['M']
@@ -87,6 +89,7 @@ def main(args):
                                                                                                               T=T,
                                                                                                               train_episodes = train_episodes,
                                                                                                               mobility_params = mobility_params)        
+
                 cursor1 = int(ep*train_episodes['T_train'])
                 cursor2 = int((ep+1)*train_episodes['T_train'])
                 gains[0][:,:,cursor1:cursor2] = copy.copy(i_gains[0])

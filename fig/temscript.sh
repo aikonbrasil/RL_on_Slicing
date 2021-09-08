@@ -1,0 +1,14 @@
+#!/bin/sh
+folder=$1
+
+echo "$1"
+
+mv spectraleff_train_K20_N100_M3_shadow10_episode4-1000_travelIND_fd10_network_0.pdf $folder
+mv spectraleff_train_K20_N100_M3_shadow10_episode4-1000_travelIND_fd10_network_0.png $folder
+mv sumrateoutputtrain_K20_N100_M3_shadow10_episode4-1000_travelIND_fd10_network_0.mat $folder
+mv interferencetrain_K20_N100_M3_shadow10_episode4-1000_travelIND_fd10_network_0.pdf $folder
+mv interference_train_K20_N100_M3_shadow10_episode4-1000_travelIND_fd10_network_0.png $folder
+mv interferencetrain_K20_N100_M3_shadow10_episode4-1000_travelIND_fd10_network_0.mat $folder
+mv se_slices_individualtrain_K20_N100_M3_shadow10_episode4-1000_travelIND_fd10_network_0.pdf $folder
+mv se_slices_individualtrain_K20_N100_M3_shadow10_episode4-1000_travelIND_fd10_network_0.png $folder
+mv se_slices_individualtrain_K20_N100_M3_shadow10_episode4-1000_travelIND_fd10_network_0.mat $folder
