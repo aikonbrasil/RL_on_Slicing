@@ -29,6 +29,7 @@
         "a_max": 0.5,
         "alpha_angle_rad": 0.175,
         "T_mobility": 10,
-        "max_doppler": 10
+        "max_doppler": 10,
+		"fullcoverage": false
     }
 }
