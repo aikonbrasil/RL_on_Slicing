@@ -5,7 +5,7 @@ mkdir fig/300m_30000iter_scenario2
 
 ###### 300m
 
-cp uav_location_scenario2_300m.tx uav_location.txt
+cp uav_location_scenario2_300m.txt uav_location.txt
 
 echo "Copying the net deployment"
 echo "300m"
