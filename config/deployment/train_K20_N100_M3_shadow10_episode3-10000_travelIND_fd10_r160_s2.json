@@ -2,7 +2,7 @@
     "simulation": {
         "num_simulations": 1,
         "simulation_index_start": 0,
-        "N": 114,
+        "N": 112,
         "K": 4,
         "M": 3,
         "R_defined": 160,
