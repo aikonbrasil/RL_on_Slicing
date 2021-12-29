@@ -3,7 +3,7 @@
 mkdir fig/140m_30000iter_scenario2
 
 
-###### 50m
+###### 140m
 
 cp uav_location_scenario2_140m.txt uav_location.txt
 
